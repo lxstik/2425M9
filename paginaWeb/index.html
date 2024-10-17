@@ -18,9 +18,16 @@
     <main>
         <!--Barra lateral-->
         <div id="lateral">
-            <div id="searchbar">
-                <input type="text" placeholder="Search">
+            <div class="search-div">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <button class="search-button">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                </div>
             </div>
+            
+            
 
             <nav id="navegacion">
                 <h2>Menu</h2>
@@ -34,9 +41,43 @@
                     <li class="item">ANOTHER SUBMENU</li>
                     <li class="item">MAXIMUS ERAT</li>
                     <li class="item">SAPIEN MAURIUS</li>
-                    <li class="item">AMET LACINIA</li>
+                    <li class="item li-bottom">AMET LACINIA</li>
                 </ul>
             </nav>
+
+            <h3 class="lat-imgs-h3">Ante interdum</h3>
+            <div id="lat-imgs">
+                <div class="lat-img lat-1">
+                    <a class="hover" href=""><img src="pic07.jpg"></a>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                </div>
+
+                <div class="lat-img">
+                    <a class="hover" href=""><img src="pic08.jpg"></a>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                </div>
+
+                <div class="lat-img last-lat-img">
+                    <a class="hover" href=""><img src="pic09.jpg"></a>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    <button class="learnMore more-lat">MORE</button>
+                </div>
+            </div>
+
+            <h3 class="lat-imgs-h3 get-in-touch">Get in touch</h3>
+            <p class="contact-text">Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. 
+                Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+
+            <ul id="contact">
+                <li><i class="fa-solid fa-envelope"></i><a  href=""><p>information@untitled.tld</p></a></li>
+                <li><i class="fa-solid fa-phone"></i><a href=""><p>(000) 000-0000</p></a></li>
+                <li id="contact-bottom"><i class="fa-solid fa-house"></i><a href=""><p>1234 Somewhere Road #8254<br>
+                    Nashville, TN 00000-0000</p></a></li>
+            </ul>
+
+            <div id="credenciales">
+                <p>© Untitled. All rights reserved. Demo Images: Unsplash. Design: HTML5 UP.</p>
+            </div>
 
         </div>
 
@@ -56,7 +97,7 @@
                             Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien
                             ac
                             quam. Lorem ipsum dolor sit nullam.</p>
-                        <button id="learnMore">LEARN MORE</button>
+                        <button class="learnMore">LEARN MORE</button>
                     </div>
                     <div id="presentacionImg">
                         <img src="pic10.jpg">
@@ -70,21 +111,6 @@
                     <div class="grid">
                         <div class="icon-container flex">
                             <div class="icon-image">
-                                <i class="fa-solid fa-house"></i>
-                            </div>
-                        </div>
-                        <div class="icon-text">
-                            <h4 class="title">Porttitor ullamcorper</h4>
-                            <p>
-                                Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                                Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="grid">
-                        <div class="icon-container flex">
-                            <div class="icon-image">
                                 <i class="icon fa-regular fa-gem"></i>
                             </div>
                         </div>
@@ -100,7 +126,7 @@
                     <div class="grid">
                         <div class="icon-container flex">
                             <div class="icon-image">
-                                <i class="icon fa-regular fa-gem"></i>
+                                <i class="fa-solid fa-paper-plane"></i>
                             </div>
                         </div>
                         <div class="icon-text">
@@ -115,7 +141,22 @@
                     <div class="grid">
                         <div class="icon-container flex">
                             <div class="icon-image">
-                                <i class="icon fa-regular fa-gem"></i>
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="icon-text">
+                            <h4 class="title">Porttitor ullamcorper</h4>
+                            <p>
+                                Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                                Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="icon-container flex">
+                            <div class="icon-image">
+                                <i class="fa-solid fa-chart-simple"></i>
                             </div>
                         </div>
                         <div class="icon-text">
@@ -129,68 +170,78 @@
                 </div>
 
 
-                <div id="seccionImgs">
-                    <div class="inners inner1">
-                        <div class="section section1">
-                            <img src="pic01.jpg">
-                            <h4>Interdum aenean</h4>
-                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                                ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            <button id="learnMore">MORE</button>
+                <div class="global-seleccion">
+                    <h3 id="global-seleccion-h3">Ipsum sed dolor</h3>
+                    <div id="seccionImgs">
+                        <div class="inners inner1">
+                            <div class="section section1">
+                                <a class="hover" href=""><img src="pic01.jpg"></a>
+                                <h4>Interdum aenean</h4>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam
+                                    facilisis
+                                    ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                <button class="learnMore">MORE</button>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="inners inner2">
-                        <div class="section section2">
-                            <img src="pic02.jpg">
-                            <h4>Interdum aenean</h4>
-                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                                ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            <button id="learnMore">MORE</button>
+
+                        <div class="inners inner2">
+                            <div class="section section2">
+                                <a class="hover" href=""><img src="pic02.jpg"></a>
+                                <h4>Interdum aenean</h4>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam
+                                    facilisis
+                                    ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                <button class="learnMore">MORE</button>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="inners inner3">
-                        <div class="section section3">
-                            <img src="pic03.jpg">
-                            <h4>Interdum aenean</h4>
-                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                                ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            <button id="learnMore">MORE</button>
+
+                        <div class="inners inner3">
+                            <div class="section section3">
+                                <a class="hover" href=""><img src="pic03.jpg"></a>
+                                <h4>Interdum aenean</h4>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam
+                                    facilisis
+                                    ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                <button class="learnMore">MORE</button>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="inners inner4">
-                        <div class="section section4">
-                            <img src="pic04.jpg">
-                            <h4>Interdum aenean</h4>
-                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                                ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            <button id="learnMore">MORE</button>
+
+                        <div class="inners inner4">
+                            <div class="section section4">
+                                <a class="hover" href=""><img src="pic04.jpg"></a>
+                                <h4>Interdum aenean</h4>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam
+                                    facilisis
+                                    ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                <button class="learnMore">MORE</button>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="inners inner5">
-                        <div class="section section5">
-                            <img src="pic05.jpg">
-                            <h4>Interdum aenean</h4>
-                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                                ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            <button id="learnMore">MORE</button>
+
+                        <div class="inners inner5">
+                            <div class="section section5">
+                                <a class="hover" href=""><img src="pic05.jpg"></a>
+                                <h4>Interdum aenean</h4>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam
+                                    facilisis
+                                    ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                <button class="learnMore">MORE</button>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="inners inner6">
-                        <div class="section section6">
-                            <img src="pic06.jpg">
-                            <h4>Interdum aenean</h4>
-                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis
-                                ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            <button id="learnMore">MORE</button>
+
+                        <div class="inners inner6">
+                            <div class="section section6">
+                                <a class="hover" href=""><img src="pic06.jpg"></a>
+                                <h4>Interdum aenean</h4>
+                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam
+                                    facilisis
+                                    ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                <button class="learnMore">MORE</button>
+                            </div>
                         </div>
+
                     </div>
-                    
                 </div>
+
             </div>
 
 
