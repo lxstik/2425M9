@@ -1,4 +1,4 @@
-/*Ajustes globales*/
+            /*Ajustes globales*/
 * {
     font-family: "Open Sans", sans-serif;
     margin: 0px;
@@ -20,17 +20,72 @@ body{
     font-size: 20px; 
 }
 
-#mainContent{
-    padding: 50px;
-}
-
 a{
+    color: #7F888F;
     text-decoration: none;
 }
-/*Barra lateral*/
+
+.dotted{
+    color: #7F888F;
+    border-bottom: 1px solid rgba(210, 215, 217, 0.75);
+    border-bottom-style: dotted;
+    
+}
+
+strong{
+    color: rgb(70, 67, 67);
+}
 
 
-/* Contenedor de la barra de búsqueda */
+
+
+
+
+            /*HOVERS*/
+
+.learnMore:hover{
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(210, 215, 217, 0.75);
+}
+
+/*hover x6 img, lat-img hovers*/
+
+.inners .hover , .lat-img .hover{
+    display: block;
+    overflow: hidden;
+    border-radius: 0.375em;
+    width: 100%;
+    position: relative;
+}
+
+.inners .hover img , .lat-img .hover img{
+    transition: transform 0.2s ease;
+    width: 100%;
+    border-radius: 0.375em; 
+    display: block; 
+}
+.inners .hover img:hover, .lat-img .hover img:hover{
+    transform: scale(1.1); 
+}
+
+.editorial-hover p{
+    color: #7F888F !important;
+}
+
+.editorial-hover p:hover, .icons-web i:hover, .li-hover li:hover, .contact-hover:hover, strong:hover{
+    transition: color 0.2s ease-in-out !important;
+    color: #f56a6a !important;
+}
+
+
+
+
+
+
+            /*Barra lateral*/
+
+        /* Contenedor de la barra de búsqueda */
+
 .search-div {
     text-align: center;
     padding: 30px;
@@ -71,23 +126,13 @@ a{
     color: #d3d3d3;
 }
 
-
-
-
-
-
-
 #lateral{
     width: 160% !important;
-    background-color: #f5f6f7
+    background-color: #f5f6f7;
 }
 
-
-
-
-
 #navegacion{
-    padding: 30px;
+    padding: 80px 30px 30px 30px;
 }
 
 #navegacion h2{
@@ -114,7 +159,60 @@ a{
     padding-bottom: 4em !important;
 }
 
-/*main content img*/
+
+
+
+            /*CONTENIDO PRINCIPAL*/
+
+#mainContent{
+    padding: 0px 80px 60px 80px;
+}
+
+        /*3 barras/iconos*/
+
+.bars i{
+    color: #f56a6a;
+    padding-bottom: 60px;
+    padding-left: 0px !important;
+}
+
+#superior-bar{
+    padding: 50px 30px;
+}
+
+.editorial{
+    color: #f56a6a;
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+    border-bottom: 5px solid ;
+}
+
+.editorial-text p{
+    color: #f56a6a;
+}
+
+.editorial-text, .icons-web{
+    width: 50%;
+}
+
+.transition-strong{
+    color: #3d4449;
+}
+
+.editorial{
+    display: flex;
+}
+
+.iconos-redes{
+    display: flex;
+    float: right;
+}
+
+.iconos-redes i{
+    margin: 0.5em;
+}
+
+            /*main content img*/
 
 #presentacion{
     display: flex;
@@ -124,7 +222,7 @@ a{
 }
 
 #presentacionTexto{
-    padding-right: 24px;
+    margin-right: 34px !important;
 }
 
 #presentacionTexto h1{
@@ -132,17 +230,22 @@ a{
     color: #52595d;
 }
 
-#presentacion p{
-    padding: 15px 0px 15px 0px;
-    color: #d8d8db;
+.sample{
+    font-size: 16px !important;
+    padding: 15px 6px 15px 0px;
+    color: #7F888F !important;
 }
 
 .free{
-    font-size: 25px;
+    padding: 15px 0px;
+    font-size: 18px;
+    color: #7F888F !important;
 }
 
 #presentacion img{
     border-radius: 10px;
+    width: 600px;
+    height: 100%;
 }
 
 .learnMore{
@@ -157,7 +260,11 @@ a{
 }
 
 
-/*opciones*/
+
+
+
+            /*opciones*/
+
 h3{
     color: #3d4449;
     width: 186px;
@@ -208,7 +315,10 @@ h3{
     align-items: center;
 }
 
-/*imagenes x6*/
+
+
+
+            /*imagenes x6*/
 
 .title{
     padding-bottom: 15px;
@@ -224,32 +334,11 @@ h3{
     flex-wrap: wrap;
 }
 
-/*hover x6 img, lat-img hovers*/
-.inners .hover , .lat-img .hover{
-    display: block;
-    overflow: hidden;
-    border-radius: 0.375em;
-    width: 100%;
-    position: relative;
-}
-
-.inners .hover img , .lat-img .hover img{
-    -moz-transition: -moz-transform 0.2s ease;
-    -webkit-transition: -webkit-transform 0.2s ease;
-    -ms-transition: -ms-transform 0.2s ease;
-    transition: transform 0.2s ease;
-    width: 100%;
-    height: auto;
-    border-radius: 0.375em; 
-    display: block; 
-    transform-origin: center; 
-}
-.inners .hover img:hover, .lat-img .hover img:hover{
-    transform: scale(1.1); 
-}
 
 
-/*diseño 6x img*/
+
+
+        /*diseño 6x img*/
 
 .section img{
     width: 100%;
@@ -325,7 +414,10 @@ h3{
     width: 32%;
 }
 
-/*lat imgs*/
+
+
+
+            /*lat imgs*/
 
 #lat-imgs{
     margin: 30px;
@@ -382,7 +474,10 @@ h3{
     font-size: 16.5px;
 }
 
-/*navegacion contacto*/
+
+
+
+        /*navegacion contacto*/
 
 #contact{
     padding: 0px 30px;
