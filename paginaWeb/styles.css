@@ -72,7 +72,7 @@ strong{
     color: #7F888F !important;
 }
 
-.editorial-hover p:hover, .icons-web i:hover, .li-hover li:hover, .contact-hover:hover, strong:hover{
+.editorial-hover p:hover, .icons-web i:hover, .li-hover:hover, .contact-hover:hover, strong:hover{
     transition: color 0.2s ease-in-out !important;
     color: #f56a6a !important;
 }
