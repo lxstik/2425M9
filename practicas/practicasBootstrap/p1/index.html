@@ -14,6 +14,22 @@
         .bg-success{
             padding-bottom: 20px;
         }
+
+        .containermain{
+          margin-top: 100px;
+        }
+
+        .container20{
+          margin-top: 20px;
+        }
+
+        .enviar{
+          margin: 15px 0px;
+        }
+
+        .p{
+          margin-top: 50px;
+        }
     </style>
 
 
@@ -54,7 +70,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container containermain">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -80,6 +96,33 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container card containermain">
+          <form>
+            <fieldset disabled>
+              <legend>Disabled fieldset example</legend>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Nombre</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Correo</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Correo">
+              </div>
+              <button type="submit" class="btn btn-success enviar">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
+        
+        <div class="container container20">
+        <button type="submit" class="btn btn-success ">Ver siguiente partido</button>
+
+        <div class="alert alert-warning container20" role="alert">
+          Última noticia! Nuestro delantero ha marcado su 100 gol en esta temporada!
+        </div>
+
+        <p class="text-center p">2024 FC Bootstrap - todos los derechos reservados</p>
         </div>
     </main>
         
